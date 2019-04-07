@@ -1,6 +1,6 @@
 object Main6 {
   def countChars(str: String): Int = {
-    str.length
+    str.groupBy(identity).map(para => para._1).size
   }
   val str = "Scala"
   println(countChars(str))
