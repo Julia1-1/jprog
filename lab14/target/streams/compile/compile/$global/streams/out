@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/lab14/src/main/scala/zad2.scala:12:13: illegal start of declaration (possible cause: missing `=' in front of current method body)[0m
+[0m[[0m[31merror[0m] [0m[0m            case PrzyjmijWiadomosc(msg) => println("Wczesniej bylo: " + msg)[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

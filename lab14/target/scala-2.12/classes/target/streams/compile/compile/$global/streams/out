@@ -1,0 +1,221 @@
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Create.scala:3:8: not found: object akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.actor.{ActorSystem, Actor, ActorRef, Props}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Create.scala:10:23: not found: type Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass MyActor extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Create.scala:13:16: not found: type Receive[0m
+[0m[[0m[31merror[0m] [0m[0m  def receive: Receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Create.scala:15:19: not found: value self[0m
+[0m[[0m[31merror[0m] [0m[0m      println(s"${self.path}: dostałem „$x”")[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Create.scala:16:23: not found: value context[0m
+[0m[[0m[31merror[0m] [0m[0m      val pracownik = context.actorOf(Props[Worker], s"gucio0")[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Create.scala:16:39: not found: value Props[0m
+[0m[[0m[31merror[0m] [0m[0m      val pracownik = context.actorOf(Props[Worker], s"gucio0")[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Create.scala:19:7: not found: value context[0m
+[0m[[0m[31merror[0m] [0m[0m      context.become(withWorkers(Set(pracownik)))[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Create.scala:22:39: not found: type Receive[0m
+[0m[[0m[31merror[0m] [0m[0m  def withWorkers(gs: Set[ActorRef]): Receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Create.scala:22:27: not found: type ActorRef[0m
+[0m[[0m[31merror[0m] [0m[0m  def withWorkers(gs: Set[ActorRef]): Receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Create.scala:24:19: not found: value self[0m
+[0m[[0m[31merror[0m] [0m[0m      println(s"${self.path}: dostałem „$x”")[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Create.scala:25:23: not found: value context[0m
+[0m[[0m[31merror[0m] [0m[0m      val pracownik = context.actorOf(Props[Worker], s"gucio${gs.size}")[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Create.scala:25:39: not found: value Props[0m
+[0m[[0m[31merror[0m] [0m[0m      val pracownik = context.actorOf(Props[Worker], s"gucio${gs.size}")[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Create.scala:27:7: not found: value context[0m
+[0m[[0m[31merror[0m] [0m[0m      context.become(withWorkers(gs + pracownik))[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Create.scala:36:22: not found: type Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass Worker extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Create.scala:40:17: missing parameter type for expanded function[0m
+[0m[[0m[31merror[0m] [0m[0mThe argument types of an anonymous function must be fully known. (SLS 8.5)[0m
+[0m[[0m[31merror[0m] [0m[0mExpected type was: ?[0m
+[0m[[0m[31merror[0m] [0m[0m  def receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Create.scala:41:33: not found: value self[0m
+[0m[[0m[31merror[0m] [0m[0m    case Work(x) => println(s"${self.path}: mam wykonać: „$x”")[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Create.scala:47:16: not found: value ActorSystem[0m
+[0m[[0m[31merror[0m] [0m[0m  val system = ActorSystem("sys")[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Hello.scala:3:8: not found: object akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.actor.{ActorSystem, Actor, Props}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Hello.scala:5:23: not found: type Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass MyActor extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Hello.scala:6:16: not found: type Receive[0m
+[0m[[0m[31merror[0m] [0m[0m  def receive: Receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Hello.scala:9:7: not found: value context[0m
+[0m[[0m[31merror[0m] [0m[0m      context.stop(self)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Hello.scala:9:20: not found: value self[0m
+[0m[[0m[31merror[0m] [0m[0m      context.stop(self)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Hello.scala:16:16: not found: value ActorSystem[0m
+[0m[[0m[31merror[0m] [0m[0m  val system = ActorSystem("sys")[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:3:8: not found: object akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.actor.{ActorSystem, Actor, ActorRef, Props, Terminated, ActorLogging, PoisonPill}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:11:20: not found: type Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass Szef extends Actor with ActorLogging {[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:11:31: not found: type ActorLogging[0m
+[0m[[0m[31merror[0m] [0m[0mclass Szef extends Actor with ActorLogging {[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:17:16: not found: type Receive[0m
+[0m[[0m[31merror[0m] [0m[0m  def receive: Receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:19:7: not found: value log[0m
+[0m[[0m[31merror[0m] [0m[0m      log.info(s"\ndostałem „$x”")[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:20:23: not found: value context[0m
+[0m[[0m[31merror[0m] [0m[0m      val pracownik = context.actorOf(Props[Worker], s"gucio0")[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:20:39: not found: value Props[0m
+[0m[[0m[31merror[0m] [0m[0m      val pracownik = context.actorOf(Props[Worker], s"gucio0")[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:21:7: not found: value context[0m
+[0m[[0m[31merror[0m] [0m[0m      context.watch(pracownik)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:24:7: not found: value context[0m
+[0m[[0m[31merror[0m] [0m[0m      context.become(withWorkers(Set(pracownik)))[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:27:39: not found: type Receive[0m
+[0m[[0m[31merror[0m] [0m[0m  def withWorkers(gs: Set[ActorRef]): Receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:27:27: not found: type ActorRef[0m
+[0m[[0m[31merror[0m] [0m[0m  def withWorkers(gs: Set[ActorRef]): Receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:29:7: not found: value log[0m
+[0m[[0m[31merror[0m] [0m[0m      log.info(s"\ndostałem „$x”")[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:30:23: not found: value context[0m
+[0m[[0m[31merror[0m] [0m[0m      val pracownik = context.actorOf(Props[Worker], s"gucio${gs.size}")[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:30:39: not found: value Props[0m
+[0m[[0m[31merror[0m] [0m[0m      val pracownik = context.actorOf(Props[Worker], s"gucio${gs.size}")[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:31:7: not found: value context[0m
+[0m[[0m[31merror[0m] [0m[0m      context.watch(pracownik)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:33:7: not found: value context[0m
+[0m[[0m[31merror[0m] [0m[0m      context.become(withWorkers(gs + pracownik))[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:35:7: not found: value log[0m
+[0m[[0m[31merror[0m] [0m[0m      log.info(s"\ndostałem wynik „$s”")[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:37:10: not found: value Terminated[0m
+[0m[[0m[31merror[0m] [0m[0m    case Terminated(gucio) =>[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:38:7: not found: value log[0m
+[0m[[0m[31merror[0m] [0m[0m      log.info(s"$gucio się sterminował biedaczek :(")[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:41:9: not found: value log[0m
+[0m[[0m[31merror[0m] [0m[0m        log.info(s"wynik to: $wynik")[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:42:9: not found: value context[0m
+[0m[[0m[31merror[0m] [0m[0m        context.system.terminate()[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:44:7: not found: value context[0m
+[0m[[0m[31merror[0m] [0m[0m      context.become(withWorkers(pracownicy))[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:53:22: not found: type Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass Worker extends Actor with ActorLogging {[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:53:33: not found: type ActorLogging[0m
+[0m[[0m[31merror[0m] [0m[0mclass Worker extends Actor with ActorLogging {[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:57:17: missing parameter type for expanded function[0m
+[0m[[0m[31merror[0m] [0m[0mThe argument types of an anonymous function must be fully known. (SLS 8.5)[0m
+[0m[[0m[31merror[0m] [0m[0mExpected type was: ?[0m
+[0m[[0m[31merror[0m] [0m[0m  def receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:59:7: not found: value log[0m
+[0m[[0m[31merror[0m] [0m[0m      log.info(s"\nmam wykonać: „$x”")[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:60:17: not found: value self[0m
+[0m[[0m[31merror[0m] [0m[0m      val res = self.path.toString.split("/").last[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:62:7: not found: value sender[0m
+[0m[[0m[31merror[0m] [0m[0m      sender() ! Szef.Result(s"$res-$sufiks")[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:63:7: not found: value context[0m
+[0m[[0m[31merror[0m] [0m[0m      context.stop(self)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:63:20: not found: value self[0m
+[0m[[0m[31merror[0m] [0m[0m      context.stop(self)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/Monitoring.scala:69:16: not found: value ActorSystem[0m
+[0m[[0m[31merror[0m] [0m[0m  val system = ActorSystem("sys")[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/zad1.scala:1:8: not found: object akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.actor._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/zad1.scala:3:33: not found: type ActorRef[0m
+[0m[[0m[31merror[0m] [0m[0m    case class Graj(przeciwnik: ActorRef)[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/zad1.scala:9:24: not found: type Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass Nadzorca extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/zad1.scala:10:18: not found: type Receive[0m
+[0m[[0m[31merror[0m] [0m[0m    def receive: Receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/zad1.scala:15:13: not found: value sender[0m
+[0m[[0m[31merror[0m] [0m[0m            sender() ! Pong }[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/zad1.scala:18:13: not found: value sender[0m
+[0m[[0m[31merror[0m] [0m[0m            sender() ! Ping[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/zad1.scala:25:18: not found: value ActorSystem[0m
+[0m[[0m[31merror[0m] [0m[0m    val system = ActorSystem("sys")[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/zad3.scala:1:8: not found: object akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.actor._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/zad3.scala:3:60: not found: type ActorRef[0m
+[0m[[0m[31merror[0m] [0m[0mcase class Wyslij(a: Double, b: Double, c: Double, serwer: ActorRef)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/zad3.scala:6:22: not found: type Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass Klient extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/zad3.scala:7:18: not found: type Receive[0m
+[0m[[0m[31merror[0m] [0m[0m    def receive: Receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/zad3.scala:13:22: not found: type Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass Serwer extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/zad3.scala:14:18: not found: type Receive[0m
+[0m[[0m[31merror[0m] [0m[0m    def receive: Receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/zad3.scala:15:66: not found: value sender[0m
+[0m[[0m[31merror[0m] [0m[0m    case Wyslij(a: Double, b: Double, c: Double, _) if(a+b>c) => sender() ! true[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/zad3.scala:16:66: not found: value sender[0m
+[0m[[0m[31merror[0m] [0m[0m    case Wyslij(a: Double, b: Double, c: Double, _) if(b+c>a) => sender() ! true[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/zad3.scala:17:66: not found: value sender[0m
+[0m[[0m[31merror[0m] [0m[0m    case Wyslij(a: Double, b: Double, c: Double, _) if(a+c>a) => sender() ! true[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/zad3.scala:18:15: not found: value sender[0m
+[0m[[0m[31merror[0m] [0m[0m    case _ => sender() ! false[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/LABPK/jkozlowska/Pulpit/akka-intro/src/main/scala/zad3.scala:22:18: not found: value ActorSystemserwer[0m
+[0m[[0m[31merror[0m] [0m[0m    val system = ActorSystemserwer("sys")[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m72 errors found[0m
